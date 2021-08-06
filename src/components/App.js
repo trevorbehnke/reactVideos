@@ -1,5 +1,14 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import App from "./components/App";
+import SearchBar from "./SearchBar";
 
-ReactDOM.render(<App />, document.querySelector("#root"));
+class App extends React.Component {
+  render() {
+    return (
+      <div className="ui container">
+        <SearchBar />
+      </div>
+    );
+  }
+}
+
+export default App;
